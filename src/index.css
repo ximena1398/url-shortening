@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,300;1,300&family=Poppins:wght@100&display=swap");
+
+.div-general {
+  padding-top: 1vh;
+  padding-left: 10vh;
+}
+
+@media(max-width:1440px){
+.div {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* padding: 1vh 10vh; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 8vh;
+  margin-bottom: -1vw;
+}
+
+.main-text {
+  font-family: "Poppins", sans-serif;
+  color: hsl(0, 0%, 75%);
+}
+.content {
+  padding-right: 2vh;
+}
+
+.img{
+    position: relative; 
+    left: 9vw;
+}
+}
+@media(max-width:375px){
+    .div {
+        display: flex;
+        flex-direction: column-reverse;
+        /* flex-wrap: wrap; */
+        /* padding: 1vh 10vh; */
+        justify-content: space-between;
+        align-items: center;
+      }
+    .main-text {
+        font-family: "Poppins", sans-serif;
+        color: hsl(0, 88%, 38%);
+      }
+}

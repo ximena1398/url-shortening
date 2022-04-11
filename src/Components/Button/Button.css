@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,300;1,300&family=Poppins:wght@700&display=swap');
+
+.button{
+    background-color: hsl(180, 66%, 49%);
+    border-radius: 28px;
+    font-family: "Poppins", sans-serif; 
+    border: 0;
+    outline: none;
+    padding: 8px 20px;
+    color: #ffffff;
+    position: relative;
+    font-weight: bold;
+}
+.button:hover{
+    opacity: 0.5;
+}
