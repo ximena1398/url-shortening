@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,300;1,300&family=Poppins:wght@100&display=swap");
+
+.url-input {
+    border-radius: 1vh;
+    font-family: "Poppins", sans-serif;
+    padding: 2vh;
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
+    border: none;
+    font-size: 2vh;
+    width: 97vh;
+  }
+
+  .url-input-error {
+    border-radius: 1vh;
+    font-family: "Poppins", sans-serif;
+    padding: 2vh;
+    /* margin-top: 5vh;
+    margin-bottom: 5vh; */
+    border-color: hsl(0, 87%, 67%);
+    font-size: 2vh;
+    width: 97vh;
+    margin-bottom: -0.6vw;
+  }
+
+  /* poner color al placeholder del input */
+  .url-input-error::placeholder { 
+    color: hsl(0, 87%, 67%);
+    opacity: 80%; 
+}
+
+  .error-div{
+      display: inline-block;
+      position: relative;
+  }
+
+  .text-error{
+    font-family: "Poppins", sans-serif;
+    color: hsl(0, 87%, 67%);
+    font-size: 1.8vh;
+    font-style: oblique;
+  }

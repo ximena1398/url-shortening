@@ -18,7 +18,7 @@ export const Header = () => {
             </div>
             <div className='divButton'>
                 <Text textContent='Login' />
-                <Button textButton='Sign Up' sizeFont="2vh"/>
+                <Button textButton='Sign Up' sizeFont="2vh" borderRadius='28px' padding='8px 20px'/>
             </div>
         </div>
     )
