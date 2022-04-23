@@ -19,17 +19,19 @@ export const AddUrl = () => {
     }
 
     return (
-        <>
+        <div className='div-url-add'>
             {
                 !show
                     ?
                     (
-                        <input
+                        <div>
+                            <input
                             className='url-input'
                             placeholder='Shorten a link here...'
                             value={inputvalue}
                             onChange={getInputValue}
                         />
+                        </div>
                     )
                     :
                     (
@@ -53,6 +55,6 @@ export const AddUrl = () => {
                 padding='2vh 5vh'
                 evaluateButton={evaluateButton}
             />
-        </>
+        </div>
     )
 }

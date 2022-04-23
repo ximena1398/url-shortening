@@ -40,24 +40,24 @@
 
   .div-img {
     position: static;
-    /* left: 100vw;
-    margin-left: 2vh; */
+    margin-bottom: 6vh;
+  }
+
+  .div-url-main {
+    background-color: hsl(260, 8%, 14%);
+    display: inline-block;
+    border-radius: 2vh;
+    height: 21.3vh;
   }
 
   .div-url {
-    background-color: hsl(260, 8%, 14%);
-    /* margin-right: 10vh; */
+    position: relative;
+    left: 0px;
+    top: -8vw;
+  }
+
+  .background-url {
     border-radius: 2vh;
-    margin-right: 19.5vh;
-    margin-top: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 8vh;
-    padding-right: 8vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
   }
 
   /* cuando un input es requerido */
