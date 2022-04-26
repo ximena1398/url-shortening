@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
 import { Button } from '../Button/Button';
 import './addurl.css';
+import { useDispatch } from 'react-redux';
+import { LinkActions } from '../../services/Area/LinkSlice';
 
 export const AddUrl = () => {
     const [inputvalue, setinputvalue] = useState('');
     const [show, setshow] = useState(false);
+    // const [url, seturl] = useState(['http://localhost:3001/','http://localhost:3002/','http://localhost:3003/']);
+    const dispatch=useDispatch()
+
+   
+    
 
     const getInputValue = (e) => {
         setinputvalue(e.target.value);
@@ -15,6 +22,16 @@ export const AddUrl = () => {
             setshow(true);
         }else{
             setshow(false);
+            // seturl(url => [inputvalue, ...url]);
+            setinputvalue('');
+            
+
+            // 1) ejecuta el createShortLink de LinkSlice
+            const data={
+                "url":inputvalue
+            }
+            dispatch(LinkActions.createShortLink(data))
+            
         }
     }
 
@@ -48,6 +65,7 @@ export const AddUrl = () => {
             }
             {/* <button onClick={evaluateButton}> Hola </button> */}
             <Button
+            
                 textButton='Shorten it!!'
                 sizeFont="2vh"
                 borderRadius='1vh'
