@@ -8,9 +8,10 @@ import { ContainerUrl } from "../../Components/ContainerUrl/ContainerUrl";
 import { Button } from "../../Components/Button/Button";
 import { AddUrl } from "../../Components/AddUrl/AddUrl";
 import { Header } from "../../Components/Header/Header";
+import { Text } from "../../Components/Text/Text";
 
 export const App = () => {
-    const { shortLinks,longLinks } = useSelector(state => state.Link)
+    const { shortLinks, longLinks } = useSelector(state => state.Link)
     console.log(longLinks)
     return (
         <>
@@ -37,11 +38,14 @@ export const App = () => {
                         </div>
                     </div>
                     <ContainerUrl short={"aaa"} long={"aa"}></ContainerUrl>
-                    {shortLinks.map((d,i) => (
-                    <ContainerUrl key={i} short={d.short} long={d.long}/>
+                    {shortLinks.map((d, i) => (
+                        <ContainerUrl key={i} short={d.short} long={d.long} />
                     ))}
                 </div>
-
+                <div className="div-text-secundary">
+                    <h1 className='title-p'>Advanced Statistics</h1>
+                    <p className='text-secundary'>Track how your links are performing across the web with our advanced statics dashboard.</p>
+                </div>
             </div>
         </>
     )

@@ -14,6 +14,9 @@
   padding-left: 19.5vh;
   background-color: rgb(240, 241, 246);
   padding-right: 19.5vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media (max-width: 1440px) {
@@ -71,6 +74,25 @@
   .div-shorten{
     position: relative;
     bottom: 12vh;
+  }
+
+  .text-secundary {
+    font-family: "Poppins", sans-serif;
+    color: hsl(0, 0%, 75%);
+    font-size: 2vh;
+    text-align: center;
+  }
+
+  .div-text-secundary{
+    padding-left: 40vh;
+    padding-right: 40vh;
+    
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  .title-p{
+    text-align: center;
+    margin-bottom: 0;
   }
 
   /* cuando un input es requerido */
