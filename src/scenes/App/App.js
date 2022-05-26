@@ -7,12 +7,17 @@ import { ReactComponent as IconGraphic2 } from '../../images/icon-detailed-recor
 import { ReactComponent as IconGraphic3 } from '../../images/icon-fully-customizable.svg';
 import { ReactComponent as Img } from '../../images/illustration-working.svg';
 import { ReactComponent as BackgroundInf } from '../../images/bg-boost-desktop.svg';
+import { ReactComponent as Facebook } from '../../images/icon-facebook.svg';
+import { ReactComponent as Twitter } from '../../images/icon-twitter.svg';
+import { ReactComponent as Pinterest } from '../../images/icon-pinterest.svg';
+import { ReactComponent as Instagram } from '../../images/icon-instagram.svg';
 import { useSelector } from 'react-redux';
 import { ContainerUrl } from "../../Components/ContainerUrl/ContainerUrl";
 import { Button } from "../../Components/Button/Button";
 import { AddUrl } from "../../Components/AddUrl/AddUrl";
 import { Header } from "../../Components/Header/Header";
 import { Text } from "../../Components/Text/Text";
+import { TextGreen } from "../../Components/TextGreen/TextGreen";
 import { CardStatistics } from "../../Components/CardStatistics/CardStatistics";
 
 export const App = () => {
@@ -42,7 +47,6 @@ export const App = () => {
                             <AddUrl />
                         </div>
                     </div>
-                    <ContainerUrl short={"aaa"} long={"aa"}></ContainerUrl>
                     {shortLinks.map((d, i) => (
                         <ContainerUrl key={i} short={d.short} long={d.long} />
                     ))}
@@ -64,20 +68,33 @@ export const App = () => {
                     </div>
                 </div>
                 <div className="div-end-dark">
-                    <div>
-                        <h1>Shortly</h1>
+                    <div className="div-end-dark-0">
+                        <h1 className="tittle-shortly">Shortly</h1>
                     </div>
-                    <div>
-
+                    <div className="div-end-dark-1">
+                        <h1 className="tittle-end">Features</h1>
+                        <TextGreen textContent='Link Shortening' />
+                        <TextGreen textContent='Brandend Links' />
+                        <TextGreen textContent='Analytics' />
                     </div>
-                    <div>
-
+                    <div className="div-end-dark-1">
+                        <h1 className="tittle-end">Resourses</h1>
+                        <TextGreen textContent='Blog' />
+                        <TextGreen textContent='Developers' />
+                        <TextGreen textContent='Support' />
                     </div>
-                    <div>
-
+                    <div className="div-end-dark-1">
+                        <h1 className="tittle-end">Company</h1>
+                        <TextGreen textContent='About' />
+                        <TextGreen textContent='Our Team' />
+                        <TextGreen textContent='Careers' />
+                        <TextGreen textContent='Contact' />
                     </div>
-                    <div>
-
+                    <div className="div-end-dark-icons">
+                        <Facebook />
+                        <Twitter />
+                        <Pinterest />
+                        <Instagram />
                     </div>
                 </div>
             </div>
