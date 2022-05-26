@@ -9,7 +9,7 @@
   /* width: 1440px; */
 }
 
-.div-gray{
+.div-gray {
   padding-top: 1vh;
   padding-left: 19.5vh;
   background-color: rgb(240, 241, 246);
@@ -71,7 +71,7 @@
     border-radius: 2vh;
   }
 
-  .div-shorten{
+  .div-shorten {
     position: relative;
     bottom: 12vh;
   }
@@ -83,18 +83,52 @@
     text-align: center;
   }
 
-  .div-text-secundary{
+  .div-text-secundary {
     padding-left: 40vh;
     padding-right: 40vh;
-    
+    margin-bottom: 8vh;
+
     /* justify-content: center; */
     /* align-items: center; */
   }
-  .title-p{
+  .title-p {
     text-align: center;
     margin-bottom: 0;
   }
 
+  .cards {
+    display: flex;
+    /* background-color: hsl(180, 66%, 49%); */
+    justify-content: space-between;
+    width: 140vh;
+    padding-bottom: 18vh;
+  }
+
+  .div-end {
+    background-color: hsl(257, 27%, 26%);
+    display: inline-block;
+    height: 31.9vh;
+  }
+
+  .div-end-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 3vh;
+    top: -25vh;
+  }
+
+  .title-end {
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .div-end-dark {
+    background-color: hsl(260, 8%, 14%);
+  }
   /* cuando un input es requerido */
   /* .url-input:required {
     border: 2px solid yellow;
