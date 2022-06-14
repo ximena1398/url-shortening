@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ximena1398.github.io/deploy-react-github-pages-with-ci",
+  "homepage": "https://ximena1398.github.io/url-shortening",
 
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://$MiTokenXimena@github.com/ximena1398.github.io/deploy-react-github-pages-with-ci"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
