@@ -16,7 +16,6 @@ import { ContainerUrl } from "../../Components/ContainerUrl/ContainerUrl";
 import { Button } from "../../Components/Button/Button";
 import { AddUrl } from "../../Components/AddUrl/AddUrl";
 import { Header } from "../../Components/Header/Header";
-import { Text } from "../../Components/Text/Text";
 import { TextGreen } from "../../Components/TextGreen/TextGreen";
 import { CardStatistics } from "../../Components/CardStatistics/CardStatistics";
 
